@@ -30,7 +30,7 @@ cd ${qc_dir}
 ######################################
 ###Convert PED file to PLINK format###
 ######################################
-##########SLAVE SCRIPT 1 INIT#########
+##########sub SCRIPT 1 INIT#########
 ######################################
 
 /bin/bash ${script_dir}PED2PLINK_ver3.sh -a ${input_dir} -b ${input_file} -c ${qc_dir}
@@ -39,7 +39,7 @@ cd ${qc_dir}
 ######################################
 #######RUN GENO and SAMPLE QC#########
 ######################################
-##########SLAVE SCRIPT 2 INIT#########
+##########sub SCRIPT 2 INIT#########
 ######################################
 
 /bin/bash ${script_dir}geno_sample_ver1.sh -a ${qc_dir} -b ${input_file} -c ${qc_dir}
@@ -60,7 +60,7 @@ echo "Sample 95%" >> ${qc_dir}Reports/Samples_excluded.txt | wc -l demo_g95_s95.
 ######################################
 ########### SEX CHECK QC##############
 ######################################
-##########SLAVE SCRIPT 3 INIT#########
+##########sub SCRIPT 3 INIT#########
 ######################################
 
 /bin/bash ${script_dir}sex_check_plink_ver1.sh -a ${qc_dir} -b ${input_file} -c ${qc_dir}
@@ -69,7 +69,7 @@ echo "Sample 95%" >> ${qc_dir}Reports/Samples_excluded.txt | wc -l demo_g95_s95.
 ######################################
 ########### SEX CHECK QC##############
 ######################################
-##########SLAVE SCRIPT 4 INIT#########
+##########sub SCRIPT 4 INIT#########
 ######################################
 #####IN PROGRESS ########
 ######################################
@@ -82,7 +82,7 @@ report_dir=/cluster/project2/demo/${qc_dir}/Reports/
 ######################################
 ##### HOMOZYGOSITY CHECK QC###########
 ######################################
-##########SLAVE SCRIPT 5 INIT#########
+##########sub SCRIPT 5 INIT#########
 ######################################
 ############IN	PROGRESS IGOR######### 
 ######################################
@@ -92,7 +92,7 @@ report_dir=/cluster/project2/demo/${qc_dir}/Reports/
 ######################################
 ########POP-STRATA CHECK QC###########
 ######################################
-##########SLAVE SCRIPT 6 INIT#########
+##########sub SCRIPT 6 INIT#########
 ######################################
 ############IN  PROGRESS IGOR#########      
 ######################################
@@ -101,7 +101,7 @@ report_dir=/cluster/project2/demo/${qc_dir}/Reports/
 ######################################
 ########IMPUTATION PREPARE############
 ######################################
-##########SLAVE SCRIPT 7 INIT#########
+##########sub SCRIPT 7 INIT#########
 ######################################
 ######################################
 ############IN PROGRESS IGOR##########
