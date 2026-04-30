@@ -1,4 +1,4 @@
-#CRISP (Comprehensive Robust Integrated SNP Processing) 
+# CRISP (Comprehensive Robust Integrated SNP Processing) 
 #code-samples-R-sh
 
 ## Notice: Repository Under Active Redevelopment
