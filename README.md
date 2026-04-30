@@ -11,7 +11,7 @@ A new unified pipeline package is currently under active development. It superse
 - **SLURM-native**  each processing step is submitted as a dependent SLURM job via a master shell script, with full logging and exit code propagation
 - **Modular step architecture**  file validation, format conversion, sample QC, variant QC, sex checking, aneuploidy detection, homozygosity analysis, and PCA run as independent, chainable steps
 - **Dual plotting engine**  publication-ready plots generated in R (ggplot2, default) or Python (matplotlib/seaborn), selectable per run
-- **Reproducibility built in** — MD5 checksums and a full input summary report are generated at the start of every run
+- **Reproducibility built in**  MD5 checksums and a full input summary report are generated at the start of every run
 
 ### Steps covered by the new pipeline
 
